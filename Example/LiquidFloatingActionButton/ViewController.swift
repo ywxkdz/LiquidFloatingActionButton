@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 import LiquidFloatingActionButton
 
 public class CustomCell : LiquidFloatingCell {
@@ -29,11 +28,14 @@ public class CustomCell : LiquidFloatingCell {
         label.textColor = UIColor.white
         label.font = UIFont(name: "Helvetica-Neue", size: 12)
         addSubview(label)
-        label.snp.makeConstraints { make in
-            make.left.equalTo(self).offset(-80)
-            make.width.equalTo(75)
-            make.top.height.equalTo(self)
-        }
+        
+        
+//
+//        label.snp.makeConstraints { make in
+//            make.left.equalTo(self).offset(-80)
+//            make.width.equalTo(75)
+//            make.top.height.equalTo(self)
+//        }
     }
 }
 
