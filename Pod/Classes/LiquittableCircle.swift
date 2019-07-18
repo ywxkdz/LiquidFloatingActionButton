@@ -18,7 +18,7 @@ open class LiquittableCircle : UIView {
             setup()
         }
     }
-    var color: UIColor = UIColor.red {
+    var color: UIColor = UIColor.clear {
         didSet {
             setup()
         }
@@ -35,7 +35,7 @@ open class LiquittableCircle : UIView {
     init(center: CGPoint, radius: CGFloat, color: UIColor) {
         let frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
         self.radius = radius
-        self.color = color
+//        self.color = color
         super.init(frame: frame)
         setup()
         self.layer.addSublayer(circleLayer)

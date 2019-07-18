@@ -28,7 +28,7 @@ extension UIColor {
     var blueC: CGFloat {
         get {
             let components = self.cgColor.components
-            return components![2]
+            return components!.count > 2 ? components![2]:0.0
         }
     }
     
