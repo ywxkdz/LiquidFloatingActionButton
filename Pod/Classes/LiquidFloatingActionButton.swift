@@ -420,7 +420,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
             cell.center = self.center.plus(self.differencePoint(distance))
             cell.update(ratio, open: true)
             
-            print("---->\(i) -- >\(distance)")
+            
             
         }
     }
